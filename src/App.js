@@ -6,6 +6,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import AsyncPage from './template/async/AsyncPage';
+import CounterPage from './template/counter/CounterPage';
+import TodoPage from './template/todo/TodoPage';
 
 function App() {
   return (
@@ -16,7 +19,7 @@ function App() {
         </header>
         <Switch>
           <Route exact path="/">
-            {/* <Home /> */}
+            <TodoPage />
           </Route>
           <Route path="/grid">
             {/* <About /> */}
@@ -25,10 +28,10 @@ function App() {
             {/* <Dashboard /> */}
           </Route>
           <Route path="/counter">
-            {/* <Dashboard /> */}
+            <CounterPage />
           </Route>
           <Route path="/async">
-            {/* <Dashboard /> */}
+            <AsyncPage />
           </Route>
         </Switch>
       </div>
