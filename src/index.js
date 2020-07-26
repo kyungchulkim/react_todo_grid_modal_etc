@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'mobx-react';
-import stores from './stores/index';
+import RootStore from './stores/index';
+
+const root = new RootStore();
+
 ReactDOM.render(
   <React.StrictMode>
-    <Provider {...stores}>
+    <Provider {...root}>
       <App />
     </Provider>
   </React.StrictMode>,

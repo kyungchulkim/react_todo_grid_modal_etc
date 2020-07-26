@@ -9,8 +9,8 @@ export default function Header() {
         <div className={css.wrap}>
             {nav.map(n => {
                 return (
-                    <Link to={n === 'Todo' ? '/' : n.toLowerCase()}>
-                        <div className={css.item} key={n}>{n}</div>
+                    <Link to={n === 'Todo' ? '/' : n.toLowerCase()} key={n}>
+                        <div className={css.item} >{n}</div>
                     </Link>
                 )
             })}
