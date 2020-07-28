@@ -1,0 +1,14 @@
+.wrap {
+    text-align: left;
+    padding: 12px 0;
+    & button {
+        float: right;
+        background: #56d5fa;
+        border: 0;
+        border-radius: 4px;
+        margin-right: 24px;
+        font-size: 18px;
+        line-height: 20px;
+        color: #fff;
+    }
+}

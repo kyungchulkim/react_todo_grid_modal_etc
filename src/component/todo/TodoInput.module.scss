@@ -1,0 +1,26 @@
+.wrap {
+    font-size: 24px;
+    display: flex;
+    padding: 0 24px;
+    margin-bottom: 12px;
+
+    & input[type=text]{
+        flex: 9 1;
+        width: 300px;
+        height: 30px;
+        margin-right: 20px;
+        padding-left: 12px;
+        outline: none;
+        font-size: 12px;
+    }
+
+    & button {
+        flex: 1 1;
+        background: #56d5fa;
+        border: 0;
+        border-radius: 4px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+    }
+}
