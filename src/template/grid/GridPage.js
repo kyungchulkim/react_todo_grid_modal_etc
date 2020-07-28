@@ -11,7 +11,6 @@ export default function GridPage() {
 
     return useObserver(()=> (
         <PageWrap title={'Grid'}>
-            
             <div className={css.gridWrap}>
                 <GridInput />
                 <GridTable data={grid.gridData} sortData={grid.sortData} keys={grid.keys}/>

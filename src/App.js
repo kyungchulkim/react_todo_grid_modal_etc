@@ -10,6 +10,7 @@ import AsyncPage from './template/async/AsyncPage';
 import CounterPage from './template/counter/CounterPage';
 import TodoPage from './template/todo/TodoPage';
 import GridPage from './template/grid/GridPage';
+import ModalPage from './template/modal/ModalPage';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             <GridPage />
           </Route>
           <Route path="/modals">
-            {/* <Dashboard /> */}
+            <ModalPage />
           </Route>
           <Route path="/counter">
             <CounterPage />
