@@ -9,6 +9,7 @@ import {
 import AsyncPage from './template/async/AsyncPage';
 import CounterPage from './template/counter/CounterPage';
 import TodoPage from './template/todo/TodoPage';
+import GridPage from './template/grid/GridPage';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             <TodoPage />
           </Route>
           <Route path="/grid">
-            {/* <About /> */}
+            <GridPage />
           </Route>
           <Route path="/modals">
             {/* <Dashboard /> */}

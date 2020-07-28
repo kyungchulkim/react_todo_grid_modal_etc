@@ -1,0 +1,50 @@
+.wrap {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    
+    & .active {
+        opacity: 1;
+    }
+    
+    & thead tr {
+        background-color: #29384b;
+
+        & th {
+            border: 1px solid #fff;
+            padding: 10px;
+            opacity: .7;
+        }
+    }
+    & tbody tr {
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #56d5fa;
+
+        & td {
+            border: 1px solid #fff;
+            padding: 10px;
+            opacity: .7;
+        }
+    }
+
+    & .arrow {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        cursor: pointer;
+
+        &.dsc {
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #fff;
+        }
+
+        &.asc {
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid #fff;
+        }
+    }
+}
