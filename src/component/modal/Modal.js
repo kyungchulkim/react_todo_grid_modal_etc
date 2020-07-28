@@ -1,6 +1,5 @@
 import React from 'react'
 import css from './Modal.module.scss'
-import cn from 'classnames'
 import Button from '../Button'
 export default function Modal({ isVisible, onClose=()=> {}, header = 'Modal Header', body = 'Modal Body' }) {
     return (

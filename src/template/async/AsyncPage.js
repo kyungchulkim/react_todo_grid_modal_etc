@@ -13,9 +13,9 @@ export default function AsyncPage() {
         <PageWrap title={'Async Actions'}>
             <div>
                 {
-                    async.city.map(city => {
+                    async.city.map((city,index) => {
                         return (
-                            <Button data={city} onClick={() => async.getCityData(city)} />
+                            <Button data={city} onClick={() => async.getCityData(city)} key={index}/>
                         )
                     })
                 }

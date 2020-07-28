@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'mobx-react';
 import RootStore from './stores/index';
+import 'mobx-react-lite/batchingForReactDom'
 
 const root = new RootStore();
 
